@@ -11,7 +11,39 @@ st.set_page_config(
     page_icon="💜"
 )
 
-st.title("💜 Comparador de belleza")
+
+st.markdown("""
+<style>
+.stApp {
+    background-color: #FFFCFE;
+}
+h1, h2, h3 {
+    color: #76516F;
+}
+div.stButton > button {
+    background-color: #76516F;
+    color: white;
+    border-radius: 14px;
+}
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown(
+    "<h1 style='text-align:center;"
+    "font-family:Georgia;"
+    "font-size:54px;'>Belzuri ✨</h1>",
+    unsafe_allow_html=True
+)
+
+st.markdown(
+    "<p style='text-align:center;"
+    "color:#A2748E;font-size:20px;'>"
+    "Mismo encanto. Mejor precio.</p>",
+    unsafe_allow_html=True
+)
+
+st.divider()
+
 st.info("Prototipo con tiendas y precios ficticios.")
 
 catalogo = [
